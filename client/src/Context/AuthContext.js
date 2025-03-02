@@ -25,6 +25,7 @@ export const AuthProvider = ({ children }) => {
             setUser(null); // Clear user data
             setIsAuthenticated(false); // Set authenticated state to false
             localStorage.removeItem('token'); // Clear token from local storage
+            
         } catch (error) {
             console.error('Logout failed:', error);
         }
